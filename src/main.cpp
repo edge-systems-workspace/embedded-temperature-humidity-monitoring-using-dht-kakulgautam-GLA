@@ -44,9 +44,11 @@ void loop() {
 
     // TODO 7:
     // Read humidity value from sensor
+    float humidity = dht.readHumidity();
 
     // TODO 8:
     // Read temperature value from sensor
+    float temperature = dht.readTemperature();
 
     // TODO 9:
     // Check if either reading failed using isnan()
