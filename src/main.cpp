@@ -37,6 +37,7 @@ void setup() {
 
     // TODO 6:
     // Print a system initialization message
+    Serial.println("System Initialized: DHT11 Sensor Ready");
 }
 
 void loop() {
