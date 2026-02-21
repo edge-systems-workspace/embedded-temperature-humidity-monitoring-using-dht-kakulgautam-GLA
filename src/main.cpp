@@ -53,10 +53,22 @@ void loop() {
     // TODO 9:
     // Check if either reading failed using isnan()
     // If failed, print error message and return
+    if (isnan(humidity) || isnan(temperature)) {
+        Serial.println("Error: Failed to read from DHT11 sensor!");
+        return;
+    }
 
     // TODO 10:
     // Print formatted temperature and humidity values
+    Serial.print("Humidity: ");
+    Serial.print(humidity);
+    Serial.print(" % | ");
+
+    Serial.print("Temperature: ");
+    Serial.print(temperature);
+    Serial.println(" °C");
 
     // TODO 11:
     // Add a 2-second delay before next reading
+    delay(2000);
 }
