@@ -15,6 +15,7 @@
 
 // TODO 1:
 // Define the DHT data pin (Use digital pin 2)
+#define DHTPIN 2
 
 // TODO 2:
 // Define the DHT sensor type (DHT11)
